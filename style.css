@@ -1,0 +1,182 @@
+html,
+body,
+div,
+span,
+h3,
+p,
+a,
+img,
+ul,
+li,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style-type: none;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+header {
+  max-height: 200px;
+  overflow: hidden;
+}
+header img {
+  width: 100%;
+}
+
+.entete {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.entete h1 {
+  margin-bottom: 20px;
+}
+.entete nav {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.entete nav a {
+  text-decoration: none;
+  color: black;
+}
+.entete nav a:hover {
+  border-bottom: 1px solid black;
+}
+.entete nav a:hover > img {
+  animation: turnGlobe 2s infinite ease-in-out;
+}
+.entete img {
+  margin-right: 10px;
+}
+
+@keyframes turnGlobe {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.sectionOne {
+  margin: auto;
+  margin-top: 100px;
+  width: 70%;
+}
+.sectionOne ul {
+  margin-left: 50px;
+}
+.sectionOne ul li {
+  list-style-type: square;
+}
+
+.sectionTwo {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  width: 70%;
+}
+.sectionTwo .other {
+  margin-right: 50px;
+}
+.sectionTwo ul {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.sectionTwo ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.sectionTwo ul li span {
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 100px;
+  margin: 0px 20px;
+}
+
+.sectionThree {
+  margin: auto;
+  margin-top: 50px;
+  width: 70%;
+}
+.sectionThree img {
+  max-height: 500px;
+}
+.sectionThree .twoText {
+  display: flex;
+}
+.sectionThree .twoText ul {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.sectionThree .twoText li {
+  margin: 30px 0;
+}
+
+.sectionFour {
+  margin: auto;
+  margin-top: 50px;
+  width: 70%;
+}
+.sectionFour img {
+  max-height: 500px;
+}
+.sectionFour .threeText {
+  display: flex;
+}
+.sectionFour .threeText ul {
+  margin-left: 30px;
+}
+.sectionFour .threeText li {
+  margin: 30px 0;
+}
+
+.sectionFive {
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+}
+.sectionFive img {
+  max-height: 700px;
+  margin: auto;
+}
+.sectionFive span {
+  text-decoration: underline;
+}
+.sectionFive p {
+  margin-top: 30px;
+}
+.sectionFive .fourText {
+  display: flex;
+}
+.sectionFive .fourText li {
+  margin: 50px 0;
+}
+
+.sectionSix {
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.sectionSix img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

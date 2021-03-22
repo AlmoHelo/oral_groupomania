@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1" />
+    <!--Optimiser pour mobiles-->
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Groupomania</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/batiment.jpg" />
+    </header>
+    <div class="entete">
+        <h1>Présentation Groupomania</h1>
+        <nav>
+            <a href="#exigences"><img src="img/logo-black.png" />Les demandes de l'entreprise</a>
+            <a href="#stack"><img src="img/logo-black.png" />La stack utilisée</a>
+            <a href="#front"><img src="img/logo-black.png" />Le front-end</a>
+            <a href="#back"><img src="img/logo-black.png" />Le backend-end</a>
+            <a href="#base"><img src="img/logo-black.png" />La base de donnée</a>
+            <a href="#site"><img src="img/logo-black.png" />Présentation du site</a>
+        </nav>
+    </div>
+    <section class="sectionOne" id="exigences">
+        <h2>Les demandes de l'entreprise</h2>
+        <ul>
+            <li>Présentation des fonctionnalités simple</li>
+            <li>Création d'un compte simple et possible depuis un mobile</li>
+            <li>Profil avec peu d'informations</li>
+            <li>Suppression du compte possible</li>
+            <li>Contenus multimédias et textuels</li>
+            <li>Voir les dernières participations des employés</li>
+            <li>Le chargé de communication doit pouvoir modérer les interactions</li>
+        </ul>
+    </section>
+    <section class="sectionTwo" id="stack">
+        <div class="other">
+            <h2> Présentation de la stack utilisée </h2>
+            <ul>
+                <li><span>Vuejs </span>: c'est un framework utilisé pour le Front-end</li>
+                <li><span>NodeJs et express</span> : c'est une plateforme logicielle en javascript et son infrastructure
+                </li>
+                <li><span>Mysql</span> : c'est un service de base de données </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="img/nodejs.png" />
+            <img src="img/sql-server.png" />
+            <img src="img/téléchargement.png" />
+        </div>
+    </section>
+
+    <section class="sectionThree" id="front">
+        <h2>Le front-end</h2>
+        <div class="twoText">
+            <img src="img/frontend_structure.jpg" />
+            <ul>
+                <li>Dossier assets : il contient nos images utilisées sur le site ainsi que les différentes polices.
+                </li>
+                <li>Dossier components : il contient tous nos composants. Un composant nous permet de regrouper un
+                    ensemble d'éléments HTML pour le réutiliser et pour faciliter sa maintenance.</li>
+                <li>Dossier router : il contient les routes de nos différentes pages.</li>
+                <li>Dossier service : il contient des fonctions utilisées à divers endroits du site.</li>
+                <li>Dossier views : il contient toutes les pages du site.</li>
+                <li>Fichier main.js : il contient les options de configuration. </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sectionFour" id="back">
+        <h2>Le back-end</h2>
+        <div class="threeText">
+            <img src="img/backend_structure.jpg" />
+            <div>
+                <ul>
+                    <li>Dossier controllers : Il contient la logique métier de nos routes.</li>
+                    <li>Dossier images : Il contient les images enregistrées par les utilisateurs du site.</li>
+                    <li>Dossier middleware : Ce sont des logiciels qui fournissent aux applications des fonctionnalités
+                        et des
+                        services communs. Ici : <ul>
+                            <li>auth.js nous permet de protéger les routes sélectionnées et de vérifier que
+                                l'utilisateur est
+                                authentifié</li>
+                            <li>multer.js nous permet de gérer les fichiers entrants, les images, dans les requêtes HTTP
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Dossier routes : Il contient la logique de nos routes.</li>
+                    <li>Fichier .gitignore : Il contient les fichiers à ignorer. Ici node_modules et aussi .env.</li>
+                    <li>Fichier app.js : C'est le fichier de démarrage du projet. Il contient tout le projet.</li>
+                    <li>Fichier serve.js : Il contient notre serveur Node. Node est un runtime qui nous sert pour écrire
+                        toutes nos tâches côté serveur en Javascript.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionFive" id="base">
+        <h2>La base de donnée</h2>
+        <div class="fourText">
+            <img src="img/bdd.jpg" />
+            <ul>
+                <li><span>Table user</span> : contient toutes les coordonnées de notre utilisateur.</li>
+                <li><span>Table item</span> : elle contient les articles postés par les utilisateurs.</li>
+                <li><span>Table comment</span> : elle contient les commentaires de chaque utilisateur selon l'article
+                    commenté.</li>
+                <li><span>Table userLikes</span> : elle répertorie les likes de chaques utilisateurs selon l'article
+                    aimé.</li>
+                <li><span>Table userDislikes</span> : elle répertorie cette fois les dislikes de chaques utilisateurs
+                    selon l'article
+                    qui n'est pas aimé.</li>
+                <li><span>Table report</span> : unique accessible par l'administrateur désigné par isAdmin dans la table
+                    user. Elle
+                    référence tous les articles et commentaires qui ont été signalé.</li>
+            </ul>
+        </div>
+        <p>Chaque table contient une clé primaire qui permet d'identifier de manière unique un enregistrement sur la
+            table. Ainsi que des clés étrangères qui sont des contraintes pour garantir l'intégrité référentielle entre
+            deux tables. Une clé étrangère identifie une colonne ou un ensemble de colonnes d'une table comme
+            référençant une colonne ou un ensemble de colonnes d'une autre table.</p>
+
+    </section>
+    <section class="sectionSix" id="site">
+        <h2>Présentation du site</h2>
+        <img src="img/site.jpg"/>
+    </section>
+</body>
+
+</html>
